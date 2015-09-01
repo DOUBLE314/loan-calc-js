@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head lang="ru  ">
+    <meta charset="UTF-8">
+    <title>JavaScript - кредитный калькулятор!</title>
+    <link rel="stylesheet" type="text/css"  href="css/style.css"/>
+    <script src="js/calc.js"></script>
+    <script src="js/chart.js"></script>
+    </head>
+<body>
+<div class="main">
+<form id="my_form">
+    <H3>Кредитный калькулятор</H3>
+    <div class="field">
+    <label for="amount"><span>Размер ссуды в рублях (Руб.)</span>
+    <input type="number" id="amount" onchange="calculate();"></label>
+    </div>
+    <div class="field">
+    <label for="ai"><span>Годовой процент (%)</span>
+    <input id="ai" onchange="calculate();"></label>
+    </div>
+    <div class="field">
+    <label for="years"><span>Период погашения (лет)</span>
+    <input id="years" onchange="calculate();"></label>
+    </div>
+    <div class = "field">
+    <label for="ziploc">Почтовый индекс:
+    <input id="ziploc" size = "10" onchange="calculate();"></label>
+    </div>
+    <div class = "field">
+    <label for="btn" >Примерный ежемесячный платеж:
+    <input type="button" id="btn" onclick="calculate();" value="Калькуляция"></label>
+    </div>
+    <div class = "field">
+    <span class="output" id="payment">Всего заплачено (руб.)</span>
+    </div>
+    <div class="field">
+    <span class="output" id="total_interest">Общий процент:</span>
+    </div>
+    <canvas id="graph"  width="400px" height="250"></canvas>
+</form>
+</div>
+</body>
+</html>

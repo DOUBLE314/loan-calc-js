@@ -1,0 +1,44 @@
+#img {content: ''}
+.main {width:400px;
+    float: left}
+.field {clear:both; text-align:right;}
+
+.form label {
+    margin-bottom: 0;
+    margin-top: 5px;
+    display: block;
+}
+label {
+    float: right;
+    font-weight: 300;
+    line-height:25px;
+    padding-right: 10px;
+}
+input {
+    padding: 15px auto;
+    border: 1px solid #368b2d;
+}
+.output { padding-right:10px;
+    font-weight: bold;
+    float: right;
+}
+h1, h2, h3 {text-transform: uppercase;
+    text-align: center;
+
+}
+#graph { border: solid black 1px; }
+#btn {
+    display: inline-block;
+    background: #4DAD30;
+    color: #fff;
+    padding: 0.3em 0.7em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    margin: 0.3em 0;
+    border: 1px solid #265618;
+    border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    cursor: pointer;
+}
